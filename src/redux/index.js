@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import { reducer as charity } from './CharityReducer'
+import { reducer as charityDonations } from './CharityReducer'
 
 
 const rootReducer = combineReducers({
-  charity,
+  charityDonations,
 })
 
 export default rootReducer
