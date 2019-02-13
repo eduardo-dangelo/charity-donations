@@ -8,18 +8,12 @@ Styling was done using [styled-components](https://www.styled-components.com/)
 
 ### Setup
 
-1.Clone project
+1.Clone project `git clone git@github.com:eduardo-dangelo/charity-donations.git`
 
-`git clone git@github.com:eduardo-dangelo/charity-donations.git`
-
-2.install packages
-
-`yarn` 
+2.install packages using `yarn` or `npm install`
 
 3.Create an account on [JustGiving Developer](https://developer.justgiving.com/) to obtain an `appId`.
 
 4.Add `REACT_APP_API_KEY=yourAppId` to your .env file
 
-5.start project
-
-`yarn start`
+5.start project `yarn start`
