@@ -5,6 +5,11 @@ import { connect } from 'react-redux'
 import { actions } from './redux/CharityReducer'
 import Header from './components/Header'
 import CharityInfo from './components/CharityInfo'
+import styled from 'styled-components'
+
+const Body = styled.div`
+  padding: 15px;
+`
 
 class App extends Component {
   componentWillMount() {
@@ -15,10 +20,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Header/>
-        <CharityInfo/>
-      </div>
+        <Body>
+          <CharityInfo/>
+        </Body>
+      </>
     );
   }
 }

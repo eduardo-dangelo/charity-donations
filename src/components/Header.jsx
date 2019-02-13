@@ -16,6 +16,7 @@ const HeaderContainer = styled.div`
 
 const Title = styled.h2`
   margin: 0;
+  font-weight: 300;
 `;
 
 class Header extends React.Component {

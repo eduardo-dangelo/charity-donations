@@ -7,7 +7,7 @@ const SET_ERROR = 'SET_ERROR'
 const initialValues = {
   isLoading: false,
   donations: [],
-  charity: {},
+  charity: null,
   error: null,
 }
 
@@ -49,6 +49,7 @@ const getCharity = (charityId) => {
 
   return (dispatch) => {
     dispatch(loading(true))
+    dispatch(setCharity(null))
 
     return axios.get(url)
       .then((response) => {
@@ -68,6 +69,7 @@ const getCharityDonations = (charityId) => {
 
   return (dispatch) => {
     dispatch(loading(true))
+    dispatch(setDonations({ donations: []}))
     return axios.get(url)
       .then((response) => {
         dispatch(loading(false))
