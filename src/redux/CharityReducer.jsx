@@ -21,7 +21,7 @@ export function reducer(state = initialValues, action) {
     case SET_DONATIONS:
       return {
         ...state,
-        donations: action.payload
+        donations: action.payload.donations
       }
     case SET_LOADING_STATUS:
       return {
