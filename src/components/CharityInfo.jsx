@@ -7,7 +7,7 @@ import DisplayAmounts from './DisplayAmounts'
 import Loader from './Loader'
 
 const CharityInfoBox = styled.div`
-  border: 1px solid #979797;
+  border: 1px solid lightgray;
   padding: 15px;
   display: flex;
   align-items: stretch;

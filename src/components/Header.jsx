@@ -6,8 +6,7 @@ import { actions } from '../redux/CharityReducer'
 
 const HeaderContainer = styled.div`
   background: #fdfdfe;
-  border-bottom: 1px solid;
-  color: #989898;
+  border-bottom: 1px solid lightgray;
   padding: 15px;
   display: flex;
   align-items: center;
