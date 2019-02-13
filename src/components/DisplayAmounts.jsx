@@ -15,10 +15,34 @@ const AmountItem = styled.div`
   margin-bottom: 15px;
   padding-right: 15px;
   box-sizing: border-box;
+  
+  p {
+    float: left;
+  }
  
   h1 {
     color: #ac29b5;
     font-size: 2.5rem;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #ac29b5;
+      bottom: 2px;
+      transition: .4s ease;
+      
+    }
+    
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+    }
   }
 `;
 
@@ -34,6 +58,7 @@ const ActionButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  float: left;
   
   svg {
     margin-left: 5px;

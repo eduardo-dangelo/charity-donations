@@ -20,7 +20,19 @@ const DonorContainer = styled.div`
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
-  margin-bottom: 15px;
+  padding: 15px 15px 0;
+  transition: .3s ease;
+  border-radius: 4px;
+  
+  &:hover {
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    
+    ${DonorInfo} {
+      border-color: transparent;
+    }
+  }
   
   img {
     width: 50px;
